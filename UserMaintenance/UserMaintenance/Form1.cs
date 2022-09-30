@@ -15,6 +15,24 @@ namespace UserMaintenance
         public Form1()
         {
             InitializeComponent();
+            label1.Text = Resource1.Last_Name;
+            label2.Text = Resource1.First_Name;
+            button1.Text = Resource1.Add;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
