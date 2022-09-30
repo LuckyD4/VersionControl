@@ -22,7 +22,7 @@ namespace UserMaintenance
             listUsers.DataSource = users;
             listUsers.ValueMember = "ID";
             listUsers.DisplayMember = "Fullname";
-
+            button2.Text = Resource1.Write;
         }
 
         private void label2_Click(object sender, EventArgs e)
