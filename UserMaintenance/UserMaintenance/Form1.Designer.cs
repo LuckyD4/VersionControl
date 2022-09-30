@@ -68,23 +68,23 @@ namespace UserMaintenance
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(264, 41);
+            this.textBox1.Location = new System.Drawing.Point(299, 41);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(264, 79);
+            this.textBox2.Location = new System.Drawing.Point(299, 79);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(206, 105);
+            this.button1.Location = new System.Drawing.Point(199, 105);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 26);
+            this.button1.Size = new System.Drawing.Size(200, 26);
             this.button1.TabIndex = 5;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
