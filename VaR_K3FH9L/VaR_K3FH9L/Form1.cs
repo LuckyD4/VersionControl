@@ -12,9 +12,18 @@ namespace VaR_K3FH9L
 {
     public partial class Form1 : Form
     {
+        PortfolioEntities context = new PortfolioEntities();
+        List<Tick> Ticks;
         public Form1()
         {
             InitializeComponent();
+            List<Tick> l = context.Ticks.ToList();
+            dataGridView1.DataSource = l;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
