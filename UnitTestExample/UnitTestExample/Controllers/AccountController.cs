@@ -47,9 +47,11 @@ namespace UnitTestExample.Controllers
                 email, 
                 @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
         }
+        
 
         public bool ValidatePassword(string password)
         {
+            
             return true;
         }
     }

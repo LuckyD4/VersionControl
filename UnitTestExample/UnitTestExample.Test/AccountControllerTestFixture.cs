@@ -28,6 +28,19 @@ namespace UnitTestExample.Test
 
 
         }
+
+        [Test,
+        TestCase("Abcdefgh", false),
+        TestCase("ABCDEFG7", false),
+        TestCase("abcdefg7", false),
+        TestCase("Abcdef7", false),
+        TestCase("Abcdefg7", true)]
+        public void TestValidatePassword(string password, bool expectedResult)
+        {
+            var accountController = new AccountController();
+            var actualResult = accountController.ValidatePassword(password);
+            Assert.AreEqual(actualResult, expectedResult);
+        }
         
     }
 }
