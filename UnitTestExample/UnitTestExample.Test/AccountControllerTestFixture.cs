@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Activities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,7 +66,21 @@ namespace UnitTestExample.Test
         ]
         public void TestRegisterValidateException(string email, string password)
         {
-        }
+            var accountController = new AccountController();
+
+            try
+            {
+                var actualResult = accountController.Register(email, password);
+                Assert.Fail();
+            }
+            catch (Exception ex)
+            {
+
+                Assert.IsInstanceOf<ValidationException>(ex);
+            }
+
 
         }
+
+    }
 }
